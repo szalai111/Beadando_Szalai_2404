@@ -1,0 +1,19 @@
+﻿<Window x:Class="Beadando_Szalai_2404.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Beadando_Szalai_2404"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Title" Content="Üdvözöljük a Szalai Étterem felügyelő rendszerében!" HorizontalAlignment="Left" Margin="43,41,0,0" VerticalAlignment="Top" Height="77" Width="757" FontSize="24" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label x:Name="label" Content="Alkalmazottak" HorizontalAlignment="Left" Margin="74,166,0,0" VerticalAlignment="Top" Height="37" Width="126" FontSize="18"/>
+        <Button x:Name="Employees_Btn" Content="Alkalmazottak" HorizontalAlignment="Left" Margin="74,203,0,0" VerticalAlignment="Top" Height="52" Width="126" Click="Employees_Btn_Click"/>
+        <Label x:Name="label1" Content="Ételek" HorizontalAlignment="Left" Margin="350,166,0,0" VerticalAlignment="Top" Height="37" Width="72" FontSize="18"/>
+        <Button x:Name="MenuItems_Btn" Content="Ételek" HorizontalAlignment="Left" Margin="323,203,0,0" VerticalAlignment="Top" Height="52" Width="126" Click="MenuItems_Btn_Click"/>
+        <Label x:Name="label2" Content="Alapanyagok" HorizontalAlignment="Left" Margin="552,166,0,0" VerticalAlignment="Top" Height="37" Width="116" FontSize="18"/>
+        <Button x:Name="Ingredients_Btn" Content="Alapanyagok" HorizontalAlignment="Left" Margin="547,203,0,0" VerticalAlignment="Top" Height="52" Width="126" Click="Ingredients_Btn_Click"/>
+
+    </Grid>
+</Window>

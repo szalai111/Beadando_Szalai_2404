@@ -1,0 +1,21 @@
+﻿<Window x:Class="Beadando_Szalai_2404.View.IngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Beadando_Szalai_2404.View"
+        mc:Ignorable="d"
+        Title="IngredientWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="IngredientDataGrid" d:ItemsSource="{Binding}" Margin="0,0,0,257" MouseLeftButtonUp="dataGrid_MouseLeftButtonUp" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Label Content="Alapanyag név:" HorizontalAlignment="Left" Margin="52,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,-0.037"/>
+        <Label Content="Mennyiség:" HorizontalAlignment="Left" Margin="52,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.043,0.464"/>
+        <TextBox x:Name="IngredientNameTextBox" HorizontalAlignment="Left" Margin="147,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AmountTextBox" HorizontalAlignment="Left" Margin="127,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="New_Btn" Content="Új" HorizontalAlignment="Left" Margin="441,243,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="New_Btn_Click"/>
+        <Button x:Name="Delete_Btn" Content="Törlés" HorizontalAlignment="Left" Margin="632,243,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="Delete_Btn_Click"/>
+        <Button x:Name="Update_Btn" Content="Frissítés" HorizontalAlignment="Left" Margin="441,325,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="Update_Btn_Click"/>
+        <Button x:Name="Save_Btn" Content="Mentés" HorizontalAlignment="Left" Margin="632,325,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="Save_Btn_Click"/>
+
+    </Grid>
+</Window>
